@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Общий стиль: Arial и т.д. */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер */
+.role-team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(to bottom, #7e7e7e5e 0%, white 100%);
+}
+
+/* Карточка с красной темой */
+.card {
+  flex: 1 1 300px;
+  background-color: white;
+  border-left: 6px solid #7e7e7e9c;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px #7e7e7e9c;
+  transition: transform 0.3s ease;
+}
+
+/* Hover-анимация */
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Заголовки */
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #7e7e7e9c;
+}
+
+/* Список */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7e7e7e9c;
+  font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="role-team-wrapper">
+        <div class="card">
+          <h3>Moja rola</h3>
+          <ul>
+            <li>Projekt graficzny</li>
+            <li>Tworzenie szablonów</li>
+            <li>Opracowanie stylu wizualnego</li>
+            <li>Dobór kolorów i typografii</li>
+            <li>Praca koncepcyjna</li>
+          </ul>
+        </div>
+      
+        <div class="card">
+          <h3>Uczestnicy projektu</h3>
+          <ul>
+            <li>Fotograf, który wykonał profesjonalne zdjęcia dań i wnętrza restauracji</li>
+            <li>Osoba wspierająca edycję zdjęć w Photoshopie, która pomogła dopracować wizualny materiał do publikacji</li>
+          </ul>
+        </div>
+      </div>
+      
+</body>
+</html>
+  
